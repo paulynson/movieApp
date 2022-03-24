@@ -1,0 +1,214 @@
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+.container {
+  padding: 40px 77px;
+  display: flex;
+  align-items: center;
+  height: 140px;
+  background-color: #292929;
+}
+
+.container h2 {
+  color: #ffffff;
+  border: 1px solid white;
+  padding: 14px 19px;
+}
+
+.heroContainer {
+  padding: 40px 77px;
+  background-image: url("/heroimg.png");
+  height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.heroContainer h1 {
+  position: absolute;
+  width: 490px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.container-content {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.inner-content {
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  display: inline-block;
+}
+
+.inner-content p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  /* margin-top: 63px; */
+  padding: 63px 77px 48px;
+}
+
+.form p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  margin: 4px 0px;
+}
+
+.form input {
+  position: static;
+  width: 100%;
+  height: 54px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.card-content {
+  flex-wrap: wrap;
+  padding: 63px 77px 48px;
+  column-gap: 13px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.card-content h2 {
+  margin-bottom: 14px;
+}
+.cart-header {
+  margin-top: 48px;
+  margin-bottom: 14px;
+}
+.card-content h2 {
+  font-size: 18px;
+}
+
+.bgContent {
+  width: 300px;
+  height: 300px;
+  margin: 0 13px 0 0;
+  background: #000000;
+  border-radius: 12px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  display: inline-block;
+  align-items: center;
+  place-content: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.bgContent p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cart1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+@media (max-width: 834px) {
+  .container,
+  .heroContainer {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 321px) {
+  .form input {
+    height: 34px;
+  }
+  .heroContainer h1 {
+    font-size: 28px;
+    width: auto;
+    line-height: 36px;
+  }
+  .form p {
+    font-size: 16px;
+  }
+
+  .form {
+    padding: 0 28px;
+    margin-top: 56px;
+  }
+
+  .bgContent,
+  .inner-content {
+    width: 200px;
+    height: 200px;
+  }
+  .card-content {
+    flex-wrap: wrap;
+    padding: 63px 28px 48px;
+    column-gap: 13px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .card-content p {
+    font-size: 18px;
+  }
+  .card-content h2 {
+    font-size: 18px;
+  }
+  .heroContainer {
+    height: 257px;
+  }
+  .container {
+    height: 67px;
+  }
+}
+
+input {
+  font-size: 16px;
+  padding: 16px;
+}
